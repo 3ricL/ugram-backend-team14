@@ -79,6 +79,6 @@ class PictureService(private val pictureRepository: PictureRepository,
             }
 
     private fun pictureUrlBuilder(userId: UserId, pictureId: PictureId): String {
-        return "$userId/$pictureId"
+        return "$pictureId"
     }
 }

@@ -15,7 +15,7 @@ class S3ImageRepository(private val s3Client: AmazonS3,
                         private val config: S3RepoConfig) {
 
     fun uploadPng(data: ByteArray, path: String): String {
-        logger.info("Uploading '{}' to folder '{}' in bucket '{}'", config.folderName, config.bucketName)
+        logger.info("Uploading to folder '{}' in bucket '{}'", config.folderName, config.bucketName)
 
         try {
             val stream: ByteArrayInputStream = ByteArrayInputStream(data)
