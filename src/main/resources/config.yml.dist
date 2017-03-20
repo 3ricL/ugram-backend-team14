@@ -1,0 +1,10 @@
+database:
+  username: "DB_USERNAME"
+  password: "DB_PASSWORD"
+  host: "HOST"
+  port: 5432
+  db_name: "DB_NAME"
+
+s3Repo:
+  folderName: "FOLDER_NAME"
+  bucketName: "BUCKET_NAME"
