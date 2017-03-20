@@ -8,3 +8,7 @@ database:
 s3Repo:
   folderName: "FOLDER_NAME"
   bucketName: "BUCKET_NAME"
+
+amazon:
+  accessKey: "ACCESS_KEY"
+  privateKey: "SECRET_KEY"

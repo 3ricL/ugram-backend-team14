@@ -2,7 +2,8 @@ package ugram.config
 
 data class Config(
         val database: DbConfig,
-        val s3Repo: S3RepoConfig
+        val s3Repo: S3RepoConfig,
+        val amazon: AmazonKeys
 )
 
 data class DbConfig(
@@ -16,4 +17,9 @@ data class DbConfig(
 data class S3RepoConfig(
         val bucketName: String,
         val folderName: String
+)
+
+data class AmazonKeys(
+        val accessKey: String,
+        val secretKey: String
 )
